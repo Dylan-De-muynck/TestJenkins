@@ -1,4 +1,4 @@
-package com.yoann.calcul;
+
 public class Calculs
 {
         private final int operande1;
