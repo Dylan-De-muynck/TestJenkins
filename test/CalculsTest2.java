@@ -17,12 +17,6 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 class CalculsTest2 {
 
-	@Test
-	void test() 
-	{
-		fail("Not yet implemented");
-	}
-
     static Stream<Arguments> chargerMultiplication() throws Throwable 
     {
         return Stream.of(
@@ -47,7 +41,7 @@ class CalculsTest2 {
 	{
 		// Partie paramétrée
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
-	        assertEquals(expectedResult, monCal.multiplier(), "test en échec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
+	        assertEquals(expectedResult, monCal.multiplier(), "test en echec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
 	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
 	        String n = null;
@@ -60,7 +54,7 @@ class CalculsTest2 {
 	{
 		// Partie paramétrée
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
-	        assertEquals(expectedResult, monCal.diviser(), "test en échec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
+	        assertEquals(expectedResult, monCal.diviser(), "test en echec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
 	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
 	        String n = null;
