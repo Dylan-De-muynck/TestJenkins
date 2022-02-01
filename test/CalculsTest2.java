@@ -49,7 +49,7 @@ class CalculsTest2 {
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
 	        assertEquals(expectedResult, monCal.multiplier(), "test en échec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
-	    // Partie indépendante (les paramÃ¨tres peuvent ne servir qu'à  une sous partie des tests)
+	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
 	        String n = null;
 	        assertNull(n);
 	}
