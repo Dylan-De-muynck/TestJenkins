@@ -45,11 +45,11 @@ class CalculsTest2 {
 	@MethodSource("chargerMultiplication")
 	void testMultiplier(int firstNumber, int secondNumber, int expectedResult) 
 	{
-		// Partie paramétrée
+		// Partie paramÃ©trÃ©e
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
 	        assertEquals(expectedResult, monCal.multiplier(), "test en échec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
-	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
+	    // Partie indÃ©pendante (les paramÃ¨tres peuvent ne servir qu'Ã  une sous partie des tests)
 	        String n = null;
 	        assertNull(n);
 	}
@@ -58,11 +58,11 @@ class CalculsTest2 {
 	@MethodSource("chargerDivision")
 	void testDivision(int firstNumber, int secondNumber, int expectedResult) 
 	{
-		// Partie paramétrée
+		// Partie paramÃ©trÃ©e
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
 	        assertEquals(expectedResult, monCal.diviser(), "test en échec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
-	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
+	    // Partie indÃ©pendante (les paramÃ¨tres peuvent ne servir qu'Ã  une sous partie des tests)
 	        String n = null;
 	        assertNull(n);
 	}

@@ -1,20 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>GroupID</groupId>
-  <artifactId>ArtifactID</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>testJenkins</name>
-<properties>
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>Votre_GroupeID</groupId>
+        <artifactId>Votre_ArtifactID</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <name>NomExemple</name>
+        <description>DescExemple</description>
+        <properties>
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
                 <java.version>11</java.version>
                 <maven.compiler.source>${java.version}</maven.compiler.source>
                 <maven.compiler.target>${java.version}</maven.compiler.target>
                 <junit-platform.version>5.7.0</junit-platform.version>
-                <maven.compiler.source>1.8</maven.compiler.source>
-    			<maven.compiler.target>1.8</maven.compiler.target>
         </properties>
-<dependencies>
+
+        <dependencies>
                 <dependency>
                         <groupId>org.junit.jupiter</groupId>
                         <artifactId>junit-jupiter-api</artifactId>
@@ -27,20 +27,7 @@
                         <version>5.7.0</version>
                         <scope>test</scope>
                 </dependency>
-		<dependency>
-	  <groupId>org.junit.jupiter</groupId>
-	  <artifactId>junit-jupiter-params</artifactId>
-	  <version>${junit-platform.version}</version>
-	  <scope>test</scope>
-	</dependency>
-	<dependency>
-	  <groupId>org.junit.platform</groupId>
-	  <artifactId>junit-platform-runner</artifactId>
-	  <version>1.8.2</version>
-	  <scope>test</scope>
-	</dependency>
-</dependencies>
-
+        </dependencies>
 <!--Puis arguments pour le build par Jenkins et le lancement des tests : -->
     <build>
 	<sourceDirectory>src</sourceDirectory>
@@ -57,11 +44,6 @@
                                 <artifactId>maven-surefire-plugin</artifactId>        
                                 <version>3.0.0-M3</version>
                                 <configuration>
-					<includes>
-					    <include>**/Test*.java</include>
-					    <include>**/*Test*.java</include>
-					    <include>**/*Tests.java</include>
-					</includes>
                                         <testFailureIgnore>
                                                         true
                                         </testFailureIgnore>
@@ -83,5 +65,4 @@
                 </plugins>
         </pluginManagement>
         </build>
-        
 </project>
