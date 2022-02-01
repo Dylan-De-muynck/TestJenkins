@@ -24,7 +24,7 @@ class CalculsTest {
 	/**
 	 * Initialise les valeurs avant chaque test 
 	 */
-	@BeforeEach // D�clencher cette m�thode avant l'ex�cution
+	@BeforeEach // Déclencher cette méthode avant l'exécution
 	void setUp() throws Exception 
 	{
 		c1 = new Calculs(1,2);
