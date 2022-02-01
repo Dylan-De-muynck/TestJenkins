@@ -30,8 +30,8 @@
         </dependencies>
 <!--Puis arguments pour le build par Jenkins et le lancement des tests : -->
     <build>
-	<sourceDirectory>src/main/java</sourceDirectory>
-	<testSourceDirectory>src/test/java</testSourceDirectory>
+	<sourceDirectory>src</sourceDirectory>
+	<testSourceDirectory>test</testSourceDirectory>
         <pluginManagement>
                 <plugins>
                         <plugin>
@@ -44,6 +44,11 @@
                                 <artifactId>maven-surefire-plugin</artifactId>        
                                 <version>3.0.0-M3</version>
                                 <configuration>
+					<includes>
+					    <include>**/Test*.java</include>
+					    <include>**/*Test*.java</include>
+					    <include>**/*Tests.java</include>
+					</includes>
                                         <testFailureIgnore>
                                                         true
                                         </testFailureIgnore>
