@@ -35,28 +35,28 @@ class CalculsTest2 {
         );
     }
 
-	@ParameterizedTest(name="Multiplication numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Multiplication numÃ©ro {index}: nombre1={0}, nombre2={1}, rï¿½sultat attendu = {2}")
 	@MethodSource("chargerMultiplication")
 	void testMultiplier(int firstNumber, int secondNumber, int expectedResult) 
 	{
-		// Partie paramétrée
+		// Partie paramÃ©trÃ©e
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
 	        assertEquals(expectedResult, monCal.multiplier(), "test en echec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
-	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
+	    // Partie indÃ©pendante (les paramÃ©tres peuvent ne servir qu'Ã  une sous partie des tests)
 	        String n = null;
 	        assertNull(n);
 	}
 	
-	@ParameterizedTest(name="Division numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Division numÃ©ro {index}: nombre1={0}, nombre2={1}, rï¿½sultat attendu = {2}")
 	@MethodSource("chargerDivision")
 	void testDivision(int firstNumber, int secondNumber, int expectedResult) 
 	{
-		// Partie paramétrée
+		// Partie paramÃ©trÃ©e
 	        Calculs monCal = new Calculs(firstNumber, secondNumber);
 	        assertEquals(expectedResult, monCal.diviser(), "test en echec pour " + firstNumber + " * " + secondNumber + " != " + expectedResult); 
 
-	    // Partie indépendante (les paramétres peuvent ne servir qu'à  une sous partie des tests)
+	    // Partie indÃ©pendante (les paramÃ©tres peuvent ne servir qu'Ã  une sous partie des tests)
 	        String n = null;
 	        assertNull(n);
 	}
